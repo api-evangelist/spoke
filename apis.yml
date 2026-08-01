@@ -1,7 +1,24 @@
 aid: spoke
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spoke.png
 name: Spoke
-description: Spoke is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'SPOKE (spoke-london.com) is a London-based direct-to-consumer men''s fashion
+  retailer specializing in tailored menswear engineered for precise fit, with the tagline
+  "A flawless fit, delivered." Its range spans trousers, denim, shirts, knitwear, shorts,
+  tailoring (suits and jackets) and accessories, sold through an e-commerce storefront with
+  a "Fit Finder" sizing tool. Backed by Seedcamp and tracked in the API Evangelist network
+  as a portfolio company. An enrichment pass found no public developer program, API, or
+  developer documentation; the company operates a standard retail e-commerce storefront only.'
 url: https://raw.githubusercontent.com/api-evangelist/spoke/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fashion
+- Menswear
+- Apparel
+- Retail
+- Ecommerce
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spoke-domain-security.yml
 - type: Website
-  url: http://spoke-london.com
+  url: https://www.spoke-london.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
